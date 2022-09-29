@@ -1,0 +1,16 @@
+.variable-bicycle__select{
+    @include f600-14-11;
+    display: none;
+    border: 1px solid #E3E3E3;
+    border-radius: 2px;
+    margin: 0;
+        width: 114px;
+        height: 30px;
+        background-color: $background-main;
+}
+
+@media screen and (max-width: $mobile-screen-max-width){
+    .variable-bicycle__select{
+        display: block;
+    }
+  }

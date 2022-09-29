@@ -1,0 +1,14 @@
+.main {
+  @include flex-column;
+  gap: 12rem;
+  width: 100%;
+  max-width: 1440px;
+}
+
+@media screen and (max-width: $mobile-screen-max-width) {
+  .main {
+    @include flex-column;
+    gap: 80px;
+    width: 88.75%;
+  }
+}

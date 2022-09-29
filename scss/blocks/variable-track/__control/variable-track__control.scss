@@ -1,0 +1,17 @@
+.variable-track__control {
+  @include slide-button;
+  cursor: pointer;
+  transition: opacity 0.5s;
+}
+
+.variable-track__control:hover {
+  opacity: 0.6;
+}
+
+@media screen and (max-width: $mobile-screen-max-width) {
+  .variable-track__control {
+    width: 24px;
+    height: 24px;
+    align-self: center;
+  }
+}

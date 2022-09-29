@@ -1,0 +1,12 @@
+.variable-track__title {
+  @include f700-55-60;
+}
+
+@media screen and (max-width: $mobile-screen-max-width) {
+  .variable-track__title {
+    @include f700-32-40;
+    padding-top: 40px;
+    grid-column: 1;
+    grid-row: 1;
+  }
+}

@@ -1,0 +1,9 @@
+.quote__author_theme_dark {
+  @include f500-20-32-d;
+}
+
+@media screen and (max-width: $mobile-screen-max-width) {
+  .quote__author_theme_dark {
+    @include f500-14-22-d;
+  }
+}

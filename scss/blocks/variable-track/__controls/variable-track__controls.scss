@@ -1,0 +1,14 @@
+.variable-track__controls {
+  padding-top: 5rem;
+  @include flex-row;
+  gap: 20px;
+}
+
+@media screen and (max-width: $mobile-screen-max-width) {
+  .variable-track__controls {
+    padding-top: 40px;
+    grid-column: 2;
+    grid-row: 1;
+    justify-content: flex-end;
+  }
+}

@@ -1,0 +1,9 @@
+.variable-track__about_theme_dark {
+  @include f400-18-28-d;
+}
+
+@media screen and (max-width: $mobile-screen-max-width) {
+  .variable-track__about_theme_dark {
+    @include f400-12-18-d;
+  }
+}

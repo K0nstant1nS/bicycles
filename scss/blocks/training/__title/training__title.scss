@@ -1,0 +1,14 @@
+.training__title {
+  @include f700-55-60;
+  grid-column: 2;
+  grid-row: 1;
+}
+
+@media screen and (max-width: $mobile-screen-max-width){
+  .training__title {
+    @include f700-32-40;
+    padding-top: 40px;
+    grid-column: 1;
+    grid-row: 1;
+  }
+}

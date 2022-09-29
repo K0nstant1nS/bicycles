@@ -1,0 +1,10 @@
+.quote__about {
+  display: block;
+  @include f400-16-28;
+}
+
+@media screen and (max-width: $mobile-screen-max-width) {
+  .quote__about {
+    @include f400-10-16;
+  }
+}

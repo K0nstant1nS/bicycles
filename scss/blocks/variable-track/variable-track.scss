@@ -1,0 +1,28 @@
+.variable-track {
+  @include self-end-block;
+  transition: left .8s, opacity .5s;
+}
+
+
+@media screen and (max-width: $mobile-screen-max-width) {
+  .variable-track {
+    width: 100%;
+    align-self: flex-start;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(3, auto);
+    row-gap: 40px;
+    justify-content: space-between;
+  }
+
+  .variable-track::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    border-bottom: 1px solid #e3e3e3;
+    content: "";
+  }
+}

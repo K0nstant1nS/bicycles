@@ -1,0 +1,9 @@
+.variable-bicycle__list-elem_active {
+  @include f600-18-28;
+  transition: opacity .3s;
+}
+
+.variable-bicycle__list-elem_active:hover {
+  @include f600-18-28;
+  opacity: .75;
+}

@@ -1,0 +1,19 @@
+.menu__mobile-popup-content {
+  @include flex-column;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.menu__mobile-popup-content .menu__list {
+  display: block;
+  @include flex-column;
+  gap: 32px;
+  padding: 144px 0 0;
+}
+
+.menu__mobile-popup-content .theme-changer {
+  padding-bottom: 38px;
+}

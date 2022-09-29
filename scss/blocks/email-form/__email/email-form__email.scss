@@ -1,0 +1,54 @@
+.email-form__email {
+  @include f500-13-28;
+  cursor: pointer;
+  background-color: inherit;
+  box-sizing: border-box;
+  padding-left: 20px;
+  width: 36rem;
+  height: 5rem;
+  border: 1px solid rgba(199, 199, 199, 0.5);
+  border-radius: 4px;
+}
+
+.email-form__email::placeholder {
+  @include f500-13-28;
+  color: $dim;
+  opacity: 0.7;
+  transition: opacity 0.3s;
+}
+
+.email-form__email:hover::-webkit-input-placeholder {
+  color: $bright;
+  opacity: 1;
+}
+.email-form__email:hover::-moz-placeholder {
+  color: $bright;
+  opacity: 1;
+}
+.email-form__email:hover:-ms-input-placeholder {
+  color: $bright;
+  opacity: 1;
+}
+.email-form__email:hover::-ms-input-placeholder {
+  color: $bright;
+  opacity: 1;
+}
+.email-form__email:hover::placeholder {
+  color: $bright;
+  opacity: 1;
+}
+
+.email-form__email:focus {
+  border: 1px solid #c7c7c7;
+  outline: 0;
+}
+
+.email-form__email:focus::placeholder {
+  width: 0;
+}
+
+@media screen and (max-width: $mobile-screen-max-width) {
+  .email-form__email {
+    max-width: calc(100% - 20px - 2px);
+  }
+}

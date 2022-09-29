@@ -1,0 +1,11 @@
+.training__app_theme_dark {
+  @include f600-18-28-d;
+}
+
+@media screen and (max-width: $mobile-screen-max-width){
+  .training__app_theme_dark {
+    @include f(600, 1.4rem, 2rem, $bright-dark, 1);
+  }
+}
+
+

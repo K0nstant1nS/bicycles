@@ -1,0 +1,11 @@
+.header{
+    @include flex-row;
+    width: 100%;
+    justify-content: flex-end;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    background: $background-main;
+    height: 74px;
+}

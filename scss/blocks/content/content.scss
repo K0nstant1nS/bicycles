@@ -1,0 +1,11 @@
+.content {
+  @include flex-column;
+  width: 100%;
+  align-items: center;
+}
+
+/*@media screen and (max-width: $mobile-screen-max-width) {
+  .content {
+    width: 88.75%;
+  }
+}*/

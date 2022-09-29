@@ -1,0 +1,13 @@
+.training__text {
+  @include f400-18-28;
+  grid-column: 2;
+  grid-row: 3;
+}
+
+@media screen and (max-width: $mobile-screen-max-width){
+  .training__text {
+    @include f400-12-18;
+    grid-column: 1;
+    grid-row: 3;
+  }
+}

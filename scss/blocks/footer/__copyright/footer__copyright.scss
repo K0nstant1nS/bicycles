@@ -1,0 +1,10 @@
+.footer__copyright {
+  @include f600-14-20;
+  padding-top: 10rem;
+}
+
+@media screen and (max-width: $mobile-screen-max-width){
+  .footer__copyright {
+    padding: 100px 0 25px 0;
+  }
+}

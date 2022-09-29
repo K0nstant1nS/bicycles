@@ -1,0 +1,11 @@
+.variable-bicycle__header {
+  @include flex-row;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: $mobile-screen-max-width){
+  .variable-bicycle__header{
+      @include flex-column;
+      gap: 40px;
+  }
+}

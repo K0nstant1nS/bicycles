@@ -1,0 +1,15 @@
+.training__links {
+  @include flex-row;
+  grid-column: 2;
+  grid-row: 5;
+  gap: 3rem;
+}
+
+@media screen and (max-width: $mobile-screen-max-width){
+  .training__links {
+    @include flex-row;
+    grid-column: 1;
+    grid-row: 4;
+    gap: 3rem;
+  }
+}

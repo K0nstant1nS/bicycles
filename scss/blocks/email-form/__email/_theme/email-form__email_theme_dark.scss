@@ -1,0 +1,48 @@
+.email-form__email_theme_dark {
+  @include f500-13-28-d;
+}
+
+.email-form__email_theme_dark::-webkit-input-placeholder {
+  @include f500-13-28-d;
+}
+
+.email-form__email_theme_dark::-moz-placeholder {
+  @include f500-13-28-d;
+}
+
+.email-form__email_theme_dark:-ms-input-placeholder {
+  @include f500-13-28-d;
+}
+
+.email-form__email_theme_dark::-ms-input-placeholder {
+  @include f500-13-28-d;
+}
+
+.email-form__email_theme_dark::placeholder {
+  @include f500-13-28-d;
+}
+
+.email-form__email_theme_dark:hover::-webkit-input-placeholder {
+  color: $bright-dark;
+  opacity: 1;
+}
+
+.email-form__email_theme_dark:hover::-moz-placeholder {
+  color: $bright-dark;
+  opacity: 1;
+}
+
+.email-form__email_theme_dark:hover:-ms-input-placeholder {
+  color: $bright-dark;
+  opacity: 1;
+}
+
+.email-form__email_theme_dark:hover::-ms-input-placeholder {
+  color: $bright-dark;
+  opacity: 1;
+}
+
+.email-form__email_theme_dark:hover::placeholder {
+  color: $bright-dark;
+  opacity: 1;
+}

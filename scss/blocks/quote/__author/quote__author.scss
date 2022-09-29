@@ -1,0 +1,12 @@
+.quote__author {
+  @include f500-20-32;
+  display: block;
+  padding-bottom: 6px;
+}
+
+@media screen and (max-width: $mobile-screen-max-width) {
+  .quote__author {
+    @include f500-14-22;
+    padding-bottom: 4px;
+  }
+}

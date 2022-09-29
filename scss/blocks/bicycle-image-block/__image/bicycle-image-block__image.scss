@@ -1,0 +1,14 @@
+.bicycle-image-block__image {
+  width: 100%;
+  max-width: 380px;
+  padding: 5.89%;
+  box-sizing:border-box;
+}
+
+@media screen and (max-width: $mobile-screen-max-width){
+  .bicycle-image-block__image {
+    box-sizing: content-box;
+    width: 100% - 5.89% * 2;
+    padding-bottom: 4px;
+  }
+}

@@ -1,0 +1,40 @@
+.footer {
+  @include flex-row;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #efefef;
+  height: 42.4rem;
+}
+
+.footer .theme-changer {
+  padding-bottom: 6.8rem;
+  padding-right: 12rem;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+@media screen and (max-width: $mobile-screen-max-width){
+  .footer{
+    position: relative;
+    width: 100%;
+    height: auto;
+  }
+
+  .footer .theme-changer{
+    display: none;
+  }
+
+  .footer::after{
+    position: absolute;
+    background-image: url('../../../images/logo.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    right: 16px;
+    bottom: 16px;
+    width: 38px;
+    height: 38px;
+    content: "";
+  }
+}

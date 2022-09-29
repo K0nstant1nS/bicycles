@@ -1,0 +1,12 @@
+.variable-track__type-image {
+  position: absolute;
+  left: 0;
+  bottom: 16px;
+}
+
+@media screen and (max-width: $mobile-screen-max-width) {
+  .variable-track__type-image{
+    width: 70px;
+    height: 28px;
+  }
+}

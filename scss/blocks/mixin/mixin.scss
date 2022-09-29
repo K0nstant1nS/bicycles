@@ -1,0 +1,232 @@
+@mixin flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+@mixin self-center-block {
+  align-self: center;
+  width: 83.33%;
+}
+
+@mixin self-end-block {
+  width: 91.66%;
+  align-self: flex-end;
+}
+
+@mixin button-nullification {
+  padding: 0;
+  border: 0;
+  background: 0;
+}
+
+@mixin slide-button {
+  @include button-nullification;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ebebeb;
+  border-radius: 50px;
+  width: 50px;
+  height: 50px;
+}
+
+@mixin slide-button-d {
+  background: #434343;
+}
+
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin f($w, $s, $h, $c, $o) {
+  font-weight: $w;
+  font-size: $s;
+  line-height: $h;
+  color: $c;
+  opacity: $o;
+}
+
+@mixin f400-18-18 {
+  @include f(400, 1.8rem, 1.8rem, $bright, 1);
+}
+
+@mixin f400-18-18-d {
+  @include f(400, 1.8rem, 1.8rem, $bright-dark, 1);
+}
+
+@mixin f600-34-44 {
+  @include f(600, 3.4rem, 4.4rem, $bright, 1);
+  letter-spacing: -0.5px;
+}
+
+@mixin f600-34-44-d {
+  @include f(600, 3.4rem, 4.4rem, $bright-dark, 1);
+  letter-spacing: -0.5px;
+}
+
+@mixin f600-18-28 {
+  @include f(600, 1.8rem, 2.8rem, $bright, 1);
+  text-align: right;
+}
+
+@mixin f600-18-28-d {
+  @include f(600, 1.8rem, 2.8rem, $bright-dark, 1);
+  text-align: right;
+}
+
+@mixin f600-18-22 {
+  @include f(600, 1.8rem, 2.2rem, $bright, 1);
+}
+
+@mixin f600-18-22-d {
+  @include f(600, 1.8rem, 2.2rem, $bright-dark, 1);
+}
+
+@mixin f600-24-32 {
+  @include f(600, 2.4rem, 3.2rem, $bright, 1);
+}
+
+@mixin f600-23-29 {
+  @include f(600, 2.2rem, 2.9rem, $bright, 1);
+}
+
+@mixin f600-23-29-d {
+  @include f(600, 2.3rem, 2.9rem, $bright-dark, 1);
+}
+
+@mixin f600-24-32-d {
+  @include f(600, 2.4rem, 3.2rem, $bright-dark, 1);
+}
+
+@mixin f600-14-20 {
+  @include f(600, 1.4rem, 2rem, #cfcfcf, 0.7);
+}
+
+@mixin f600-14-20-d {
+  @include f(600, 1.4rem, 2rem, #565656, 0.7);
+}
+
+@mixin f600-14-18 {
+  @include f(600, 1.4rem, 1.8rem,$bright , 1);
+}
+
+@mixin f600-14-18-d {
+  @include f(600, 1.4rem, 1.8rem, $bright-dark, 1);
+}
+
+@mixin f600-13-19 {
+  @include f(600, 1.3rem, 1.9rem, #ffffff, 1);
+}
+
+@mixin f600-14-11 {
+  @include f(600, 1.4rem, 1.1rem, $bright, 1);
+}
+
+@mixin f600-14-11-d {
+  @include f(600, 1.4rem, 1.1rem, $bright-dark, 1);
+}
+
+@mixin f700-55-60 {
+  @include f(700, 5.5rem, 6rem, $bright, 1);
+  letter-spacing: -0.5px;
+  margin: 0;
+}
+
+@mixin f700-55-60-d {
+  @include f(700, 5.5rem, 6rem, $bright-dark, 1);
+  letter-spacing: -0.5px;
+  margin: 0;
+}
+
+@mixin f700-32-40 {
+  @include f(700, 3.2rem, 4rem, $bright, 1);
+  letter-spacing: -0.5px;
+  margin: 0;
+}
+
+@mixin f700-32-40-d {
+  @include f(700, 3.2rem, 4rem, $bright-dark, 1);
+  letter-spacing: -0.5px;
+  margin: 0;
+}
+
+@mixin f500-13-28 {
+  @include f(500, 1.3rem, 2.8rem, $dim, 0.7);
+}
+
+@mixin f500-13-28-d {
+  @include f(500, 1.3rem, 2.8rem, $dim-dark, 0.7);
+}
+
+@mixin f500-14-18 {
+  @include f(500, 1.4rem, 1.8rem, $bright, 1);
+  text-align: right;
+}
+
+@mixin f500-14-18-d {
+  @include f(500, 1.4rem, 1.8rem, $bright-dark, 1);
+  text-align: right;
+}
+
+@mixin f500-14-22 {
+  @include f(500, 1.4rem, 2.2rem, $bright, 1);
+}
+
+@mixin f500-14-22-d {
+  @include f(500, 1.4rem, 2.2rem, $bright-dark, 1);
+}
+
+@mixin f500-18-18 {
+  @include f(500, 1.8rem, 1.8rem, $bright, 1);
+  text-align: right;
+}
+
+@mixin f500-18-18-d {
+  @include f(500, 1.8rem, 1.8rem, $bright-dark, 1);
+  text-align: right;
+}
+
+@mixin f500-20-32 {
+  @include f(500, 2rem, 3.2rem, $bright, 1);
+}
+
+@mixin f500-20-32-d {
+  @include f(500, 2rem, 3.2rem, $bright-dark, 1);
+}
+
+@mixin f400-18-28 {
+  @include f(400, 1.8rem, 2.8rem, $dim, 0.7);
+  margin: 0;
+  padding: 0;
+}
+
+@mixin f400-18-28-d {
+  @include f(400, 1.8rem, 2.8rem, $dim-dark, 0.7);
+  margin: 0;
+  padding: 0;
+}
+
+@mixin f400-16-28 {
+  @include f(400, 1.6rem, 2.8rem, $dim, 0.7);
+}
+
+@mixin f400-16-28-d {
+  @include f(400, 1.6rem, 2.8rem, $dim-dark, 0.7);
+}
+
+@mixin f400-10-16 {
+  @include f(400, 1rem, 1.6rem, $dim, 0.7);
+}
+
+@mixin f400-10-16-d {
+  @include f(400, 1rem, 1.6rem, $dim-dark, 0.7);
+}
+
+@mixin f400-12-18 {
+  @include f(400, 1.2rem, 1.8rem, $dim, 0.7);
+}
+
+@mixin f400-12-18-d {
+  @include f(400, 1.2rem, 1.8rem, $dim-dark, 0.7);
+}

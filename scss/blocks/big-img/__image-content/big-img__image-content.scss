@@ -1,0 +1,12 @@
+.big-img__image-content {
+  position: relative;
+  grid-column: 4;
+  grid-row: 1/-1;
+}
+
+@media screen and (max-width: $mobile-screen-max-width) {
+  .big-img__image-content {
+    grid-column: 2;
+    grid-row: 2;
+  }
+}

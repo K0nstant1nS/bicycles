@@ -1,0 +1,9 @@
+.quote__img {
+  width: 54.17%;
+}
+
+@media screen and (max-width: $mobile-screen-max-width) {
+  .quote__img {
+    width: 100%;
+  }
+}

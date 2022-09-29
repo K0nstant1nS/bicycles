@@ -1,0 +1,14 @@
+.variable-bicycle__images-set {
+  @include flex-row;
+  gap: 2rem;
+  justify-content: space-around;
+  padding: 12rem 0 9rem;
+}
+
+@media screen and (max-width: $mobile-screen-max-width){
+  .variable-bicycle__images-set {
+    position: relative;
+    padding: 0;
+    align-self: center;
+  }
+}

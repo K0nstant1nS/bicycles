@@ -1,0 +1,71 @@
+.big-img__more {
+  @include button-nullification;
+  grid-column: 2;
+  grid-row: 6;
+  position: relative;
+  width: 18rem;
+  height: 5rem;
+  background: #24b47e;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.big-img__more::after {
+  position: absolute;
+  top: 2.5rem - 0.9rem;
+  left: 4.389rem + 0.5rem;
+  font-weight: 600;
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  letter-spacing: 1px;
+  color: #ffffff;
+  content: "Подробнее";
+}
+
+.big-img__more::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: 1px;
+  color: #ffffff;
+  width: 0;
+  height: 5rem;
+  background: #319e75;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: width 0.5s ease;
+  content: "";
+}
+
+.big-img__more:hover::before {
+  width: 18rem;
+  content: "";
+}
+
+@media screen and (max-width: $mobile-screen-max-width) {
+  .big-img__more {
+    grid-column: 1/-1;
+    grid-row: 4;
+    width: 100%;
+    height: 46px;
+  }
+
+  .big-img__more::before {
+    height: 46px;
+  }
+
+  .big-img__more:hover::before {
+    width: 100%;
+    content: "";
+  }
+
+  .big-img__more::after {
+    @include f600-13-19;
+    top: 46px/2 - 19px /2;
+    left: calc(50% - 40px);
+  }
+}

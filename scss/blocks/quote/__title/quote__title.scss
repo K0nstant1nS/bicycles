@@ -1,0 +1,10 @@
+.quote__title {
+  margin: 0;
+  @include f600-34-44;
+}
+
+@media screen and (max-width: $mobile-screen-max-width) {
+  .quote__title {
+    @include f600-23-29;
+  }
+}
