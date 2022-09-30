@@ -14,6 +14,7 @@
 @import "./blocks/menu/__list-link/menu__list-link.scss";
 @import "./blocks/menu/__mobile-menu/menu__mobile-menu.scss";
 @import "./blocks/menu/__mobile-line/menu__mobile-line.scss";
+@import "./blocks/menu/__mobile-line/_theme/menu__mobile-line_theme_dark.scss";
 @import "./blocks/menu/__mobile-popup/menu__mobile-popup.scss";
 @import "./blocks/menu/__mobile-popup/_theme/menu__mobile-popup_theme_dark.scss";
 @import "./blocks/menu/__mobile-popup/_opened/menu__mobile-popup_opened.scss";
@@ -76,10 +77,12 @@
 @import "./blocks/footer/__content/footer__content.scss";
 @import "./blocks/footer/__copyright/footer__copyright.scss";
 @import "./blocks/theme-changer/theme-changer.scss";
-@import "./blocks/theme-changer/theme-changer__moon-img/theme-changer__moon-img";
-@import "./blocks/theme-changer/theme-changer__sun-img/theme-changer__sun-img.scss";
-@import "./blocks/theme-changer/theme-changer__theme-input-handler/theme-changer__theme-input-handler.scss";
-@import "./blocks/theme-changer/theme-changer__theme-input/theme-changer__theme-input.scss";
+@import "./blocks/theme-changer/__moon-img/theme-changer__moon-img";
+@import "./blocks/theme-changer/__sun-img/theme-changer__sun-img.scss";
+@import "./blocks/theme-changer/__theme-input-handler/theme-changer__theme-input-handler.scss";
+@import "./blocks/theme-changer/__theme-input/theme-changer__theme-input.scss";
+@import "./blocks/theme-changer/__button/theme-changer__button.scss";
+@import "./blocks/theme-changer/__theme-input/theme-changer__theme-input.scss";
 @import "./blocks/bicycle-image-block/__image-caption/_theme/bicycle-image-block__image-caption_theme_dark.scss";
 @import "./blocks/big-img/__bycicle-name/_theme/big-img__bycicle-name_theme_dark.scss";
 @import "./blocks/big-img/__paragraph/_theme/big-img__paragraph_theme_dark.scss";

@@ -1,0 +1,9 @@
+.theme-changer__button {
+  @include button-nullification;
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+
+.theme-changer__button:hover {
+  opacity: 0.6;
+}

@@ -7,3 +7,9 @@
   top: 11px;
   cursor: pointer;
 }
+
+@media screen and (max-width: $mobile-screen-max-width) {
+  .email-form__submit-button {
+    right: 31px;
+  }
+}

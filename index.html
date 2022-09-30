@@ -43,9 +43,18 @@
             </li>
           </ul>
           <button type="button" class="menu__mobile-menu">
-            <span class="menu__mobile-line"></span>
-            <span class="menu__mobile-line"></span>
-            <span class="menu__mobile-line"></span>
+            <span
+              class="menu__mobile-line"
+              data-theme="menu__mobile-line_theme_dark"
+            ></span>
+            <span
+              class="menu__mobile-line"
+              data-theme="menu__mobile-line_theme_dark"
+            ></span>
+            <span
+              class="menu__mobile-line"
+              data-theme="menu__mobile-line_theme_dark"
+            ></span>
           </button>
           <div
             class="menu__mobile-popup"
@@ -79,26 +88,34 @@
                 </li>
               </ul>
               <div class="theme-changer">
-                <img
-                  class="theme-changer__sun-img"
-                  src="./images/sun.svg"
-                  alt="Солнце"
-                />
+                <button
+                  type="button"
+                  class="theme-changer__button"
+                  data-totheme="light"
+                >
+                  <img
+                    class="theme-changer__sun-img"
+                    src="./images/sun.svg"
+                    alt="Солнце"
+                  />
+                </button>
                 <div class="theme-changer__theme-input-handler">
                   <input type="checkbox" class="theme-changer__theme-input" />
                 </div>
-                <img
-                  class="theme-changer__moon-img"
-                  src="./images/moon.svg"
-                  alt="Луна"
-                />
+                <button
+                  type="button"
+                  class="theme-changer__button"
+                  data-totheme="dark"
+                >
+                  <img
+                    class="theme-changer__moon-img"
+                    src="./images/moon.svg"
+                    alt="Луна"
+                  />
+                </button>
               </div>
               <button type="button" class="menu__close">
-                <img
-                  alt="Крестик"
-                  src="./images/close.svg"
-                  data-theme="menu__close_theme_dark"
-                />
+                <img alt="Крестик" src="./images/close.svg" />
               </button>
             </div>
           </div>
@@ -401,19 +418,31 @@
           <span class="footer__copyright">© Road Club 2021</span>
         </div>
         <div class="theme-changer">
-          <img
-            class="theme-changer__sun-img"
-            src="./images/sun.svg"
-            alt="Солнце"
-          />
+          <button
+            type="button"
+            class="theme-changer__button"
+            data-totheme="light"
+          >
+            <img
+              class="theme-changer__sun-img"
+              src="./images/sun.svg"
+              alt="Солнце"
+            />
+          </button>
           <div class="theme-changer__theme-input-handler">
             <input type="checkbox" class="theme-changer__theme-input" />
           </div>
-          <img
-            class="theme-changer__moon-img"
-            src="./images/moon.svg"
-            alt="Луна"
-          />
+          <button
+            type="button"
+            class="theme-changer__button"
+            data-totheme="dark"
+          >
+            <img
+              class="theme-changer__moon-img"
+              src="./images/moon.svg"
+              alt="Луна"
+            />
+          </button>
         </div>
       </footer>
     </div>

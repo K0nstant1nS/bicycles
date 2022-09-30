@@ -28,6 +28,7 @@ const slideStatus = document.querySelectorAll(".variable-bicycle__scroll-elem");
 const emailFormElement = document.querySelector(".email-form");
 const emailInputElement = emailFormElement.querySelector(".email-form__email");
 const buttonSubmit = document.querySelector(".email-form__submit-button");
+const themeButtons = document.querySelectorAll(".theme-changer__button");
 let currentTrace = 0;
 let currentBike = 0;
 
@@ -358,3 +359,24 @@ document
       bicycleImageBlocks[currentBike].style.display = "flex";
     });
   });
+
+themeButtons.forEach(function (item) {
+  const darkThemed = document.querySelectorAll("[data-theme]");
+  item.addEventListener("click", function () {
+    if (item.dataset.totheme == "dark") {
+      themeCheckboxes.forEach(function (item) {
+        item.checked = true;
+      });
+      darkThemed.forEach(function (item) {
+        item.classList.add(item.dataset.theme);
+      });
+    } else {
+      themeCheckboxes.forEach(function (item) {
+        item.checked = false;
+      });
+      darkThemed.forEach(function (item) {
+        item.classList.remove(item.dataset.theme);
+      });
+    }
+  });
+});
