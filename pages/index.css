@@ -1238,10 +1238,14 @@ template {
   }
 }
 .variable-bicycle__scroll-elem {
-  background-color: #CACACA;
+  padding: 0;
+  border: 0;
+  background: 0;
+  background-color: #cacaca;
   border-radius: 50%;
   height: 4px;
   width: 4px;
+  cursor: pointer;
 }
 
 .variable-bicycle__scroll-elem_active {

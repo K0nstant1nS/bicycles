@@ -1,6 +1,8 @@
-.variable-bicycle__scroll-elem{
-    background-color: #CACACA;
-    border-radius: 50%;
-    height: 4px;
-    width: 4px;
+.variable-bicycle__scroll-elem {
+  @include button-nullification;
+  background-color: #cacaca;
+  border-radius: 50%;
+  height: 4px;
+  width: 4px;
+  cursor: pointer;
 }

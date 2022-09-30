@@ -341,3 +341,20 @@ document.addEventListener("click", function (e) {
     buttonSubmit.style.display = "none";
   }
 });
+
+document
+  .querySelectorAll(".variable-bicycle__scroll-elem")
+  .forEach(function (item) {
+    item.addEventListener("click", function (e) {
+      currentBike = item.dataset.scollnumber;
+      const currentBikeNumber = document.querySelector(
+        ".variable-bicycle__scroll-elem_active"
+      ).dataset.scollnumber;
+      document
+        .querySelector(".variable-bicycle__scroll-elem_active")
+        .classList.remove("variable-bicycle__scroll-elem_active");
+      item.classList.add("variable-bicycle__scroll-elem_active");
+      bicycleImageBlocks[currentBikeNumber].style.display = "none";
+      bicycleImageBlocks[currentBike].style.display = "flex";
+    });
+  });
