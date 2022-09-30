@@ -1,12 +1,13 @@
 .menu__mobile-menu {
+  @include button-nullification;
   display: none;
   padding-top: 28px;
   cursor: pointer;
-  transition: opacity .3s;
+  transition: opacity 0.3s;
 }
 
 .menu__mobile-menu:hover {
-  opacity: .6;
+  opacity: 0.6;
 }
 
 @media screen and (max-width: $mobile-screen-max-width) {

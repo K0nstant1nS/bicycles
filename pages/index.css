@@ -489,6 +489,9 @@ template {
   }
 }
 .menu__mobile-menu {
+  padding: 0;
+  border: 0;
+  background: 0;
   display: none;
   padding-top: 28px;
   cursor: pointer;
@@ -554,6 +557,9 @@ template {
 }
 
 .menu__close {
+  padding: 0;
+  border: 0;
+  background: 0;
   position: fixed;
   z-index: 2;
   top: 34.5px;
@@ -655,9 +661,6 @@ template {
 }
 
 .big-img__more {
-  padding: 0;
-  border: 0;
-  background: 0;
   grid-column: 2;
   grid-row: 6;
   position: relative;

@@ -1,4 +1,5 @@
 .menu__close {
+  @include button-nullification;
   position: fixed;
   z-index: 2;
   top: 34.5px;
