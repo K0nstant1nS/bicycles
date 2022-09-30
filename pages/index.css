@@ -345,22 +345,22 @@ template {
 
 @media screen and (max-width: 1280px) {
   .document {
-    font-size: 9px;
+    font-size: 8px;
   }
 }
 @media screen and (max-width: 1070px) {
   .document {
-    font-size: 8px;
+    font-size: 7px;
   }
 }
 @media screen and (max-width: 960px) {
   .document {
-    font-size: 7px;
+    font-size: 6px;
   }
 }
 @media screen and (max-width: 840px) {
   .document {
-    font-size: 6px;
+    font-size: 5px;
   }
 }
 @media screen and (max-width: 720px) {
@@ -383,20 +383,21 @@ template {
   font-family: "Inter", "Arial", sans-serif;
   background: #f4f4f4;
   min-width: 320px;
-  overflow-x: hidden;
 }
 
 .header {
   display: flex;
   flex-direction: row;
   width: 100%;
+  max-width: 1440px;
+  min-width: 320px;
   justify-content: flex-end;
-  position: fixed;
+  position: sticky;
   left: 0;
   top: 0;
   z-index: 1;
   background: #f4f4f4;
-  height: 74px;
+  height: 7.4rem;
 }
 
 .header_theme_dark {
@@ -406,15 +407,12 @@ template {
 .content {
   display: flex;
   flex-direction: column;
+  position: relative;
   width: 100%;
   align-items: center;
+  max-width: 1440px;
 }
 
-/*@media screen and (max-width: $mobile-screen-max-width) {
-  .content {
-    width: 88.75%;
-  }
-}*/
 .main {
   display: flex;
   flex-direction: column;
@@ -439,7 +437,6 @@ template {
     justify-content: flex-end;
     width: 100%;
     padding-bottom: 28px;
-    min-width: 320px;
   }
 }
 .menu__list {
@@ -578,7 +575,7 @@ template {
 }
 
 .big-img {
-  padding-top: 94px;
+  padding-top: 20px;
   width: 100%;
   display: grid;
   grid-template-columns: 12rem 46rem auto minmax(40%, 61rem);
@@ -587,7 +584,7 @@ template {
 
 @media screen and (max-width: 640px) {
   .big-img {
-    padding-top: 114px;
+    padding-top: 40px;
     grid-template-columns: 10.56% 89.44%;
     grid-template-rows: auto auto auto auto;
     row-gap: 40px;
@@ -1096,6 +1093,7 @@ template {
     flex-direction: column;
     align-items: flex-start;
     gap: 20px;
+    overflow-x: hidden;
   }
   .variable-bicycle::before {
     position: absolute;
