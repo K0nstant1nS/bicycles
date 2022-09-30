@@ -1303,8 +1303,8 @@ template {
 }
 .bicycle-image-block__image {
   width: 100%;
-  max-width: 380px;
-  padding: 5.89%;
+  max-width: 340px;
+  max-height: 340px;
   box-sizing: border-box;
 }
 
@@ -1312,6 +1312,7 @@ template {
   .bicycle-image-block__image {
     box-sizing: content-box;
     width: 88.22%;
+    padding: 5.89%;
     padding-bottom: 4px;
   }
 }
@@ -1322,6 +1323,7 @@ template {
   align-items: center;
   background: #f4f4f4;
   border-radius: 20px;
+  padding: 2rem;
   -webkit-filter: drop-shadow(0px 20px 140px rgba(0, 0, 0, 0.06));
   filter: drop-shadow(0px 20px 140px rgba(0, 0, 0, 0.06));
 }
@@ -1333,6 +1335,7 @@ template {
 
 @media screen and (max-width: 640px) {
   .bicycle-image-block__image-container {
+    padding: 0;
     width: 100%;
     -webkit-filter: none;
     filter: none;
