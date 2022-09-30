@@ -27,6 +27,7 @@ const bicyclesLinksBlocks = document.querySelectorAll(
 const slideStatus = document.querySelectorAll(".variable-bicycle__scroll-elem");
 const emailFormElement = document.querySelector(".email-form");
 const emailInputElement = emailFormElement.querySelector(".email-form__email");
+const buttonSubmit = document.querySelector(".email-form__submit-button");
 let currentTrace = 0;
 let currentBike = 0;
 
@@ -327,23 +328,16 @@ window.addEventListener("resize", function () {
 });
 
 emailInputElement.addEventListener("focus", function () {
-  let buttonOk = document.createElement("p");
-  emailInputElement.style.cursor = "auto";
-  buttonOk.style.position = "absolute";
-  buttonOk.style.top = "11px";
-  buttonOk.style.right = "31px";
-  buttonOk.style.margin = "0";
-  buttonOk.style.cursor = "pointer";
-  buttonOk.style.fontWeight = "500";
-  buttonOk.style.fontSize = "13px";
-  buttonOk.style.lineHeight = "28px";
-  buttonOk.textContent = "ok";
-  buttonOk.addEventListener("mousedown", function (e) {
+  buttonSubmit.style.display = "block";
+  emailFormElement.addEventListener("submit", function (e) {
+    e.preventDefault();
     emailInputElement.value = "Круто!";
+    buttonSubmit.style.display = "none";
   });
-  emailFormElement.appendChild(buttonOk);
 });
 
-emailInputElement.addEventListener("blur", function () {
-  emailFormElement.removeChild(emailFormElement.querySelector("p"));
+document.addEventListener("click", function (e) {
+  if (e.target !== emailInputElement) {
+    buttonSubmit.style.display = "none";
+  }
 });

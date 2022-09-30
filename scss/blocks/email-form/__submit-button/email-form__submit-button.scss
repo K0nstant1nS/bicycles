@@ -1,0 +1,9 @@
+.email-form__submit-button {
+  display: none;
+  @include f500-13-28-b;
+  @include button-nullification;
+  position: absolute;
+  right: 11px;
+  top: 11px;
+  cursor: pointer;
+}

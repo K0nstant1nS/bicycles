@@ -10,6 +10,10 @@
   border-radius: 4px;
 }
 
+.email-form__email:focus {
+  cursor: auto;
+}
+
 .email-form__email::placeholder {
   @include f500-13-28;
   color: $dim;

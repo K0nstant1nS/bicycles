@@ -104,7 +104,7 @@
         </nav>
       </header>
       <main class="main">
-        <article class="big-img">
+        <section class="big-img">
           <h1 class="big-img__title" data-theme="big-img__title_theme_dark">
             Шоссе, ТТ и&nbsp;Грэвел
           </h1>
@@ -116,7 +116,7 @@
             живописным маршрутам – нужно только определиться с выбором
             велосипеда и отправиться в путь.
           </p>
-          <button class="big-img__more"></button>
+          <button type="button" class="big-img__more"></button>
           <p
             class="big-img__bycicle-name"
             data-theme="big-img__bycicle-name_theme_dark"
@@ -139,8 +139,8 @@
               </div>
             </div>
           </div>
-        </article>
-        <article class="quote">
+        </section>
+        <section class="quote">
           <img
             class="quote__img"
             src="./images/quote-img.png"
@@ -163,8 +163,8 @@
               >
             </div>
           </div>
-        </article>
-        <article id="track" class="variable-track">
+        </section>
+        <section id="track" class="variable-track">
           <h2
             class="variable-track__title"
             data-theme="variable-track__title_theme_dark"
@@ -198,6 +198,7 @@
           </div>
           <div class="variable-track__controls">
             <button
+              type="button"
               class="variable-track__control"
               data-theme="variable-track__control_theme_dark"
               data-direction="-1"
@@ -210,6 +211,7 @@
               />
             </button>
             <button
+              type="button"
               class="variable-track__control"
               data-theme="variable-track__control_theme_dark"
               data-direction="1"
@@ -222,8 +224,8 @@
               />
             </button>
           </div>
-        </article>
-        <article id="bicycle" class="variable-bicycle">
+        </section>
+        <section id="bicycle" class="variable-bicycle">
           <div class="variable-bicycle__header">
             <h2
               class="variable-bicycle__title"
@@ -331,8 +333,8 @@
             <li class="variable-bicycle__scroll-elem" data-scollNumber="1"></li>
             <li class="variable-bicycle__scroll-elem" data-scollNumber="2"></li>
           </ul>
-        </article>
-        <article id="training" class="training">
+        </section>
+        <section id="training" class="training">
           <h2 class="training__title" data-theme="training__title_theme_dark">
             Тренировки
           </h2>
@@ -362,20 +364,29 @@
             src="./images/Traning.png"
             alt="Поворот дороги и деревья на обочине"
           />
-        </article>
+        </section>
       </main>
       <footer class="footer" data-theme="footer_theme_dark">
         <div class="footer__content">
           <h3 class="footer__connect" data-theme="footer__connect_theme_dark">
             Подпишитесь на рассылку —
           </h3>
-          <form class="email-form" action="#">
+          <form name="email-form" class="email-form" action="#">
             <input
+              name="email-input"
               class="email-form__email"
               type="email"
               placeholder="Ваш e-mail"
               data-theme="email-form__email_theme_dark"
+              required
             />
+            <button
+              type="submit"
+              class="email-form__submit-button"
+              data-theme="email-form__submit-button_theme_dark"
+            >
+              ok
+            </button>
           </form>
           <span class="footer__copyright">© Road Club 2021</span>
         </div>

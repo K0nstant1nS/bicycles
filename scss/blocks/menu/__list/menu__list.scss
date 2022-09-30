@@ -7,6 +7,13 @@
   list-style: none;
 }
 
+.menu__mobile-popup-content .menu__list {
+  display: block;
+  @include flex-column;
+  gap: 32px;
+  padding: 144px 0 0;
+}
+
 @media screen and (max-width: $mobile-screen-max-width) {
   .menu__list {
     display: none;

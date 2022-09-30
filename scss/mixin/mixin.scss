@@ -108,7 +108,7 @@
 }
 
 @mixin f600-14-18 {
-  @include f(600, 1.4rem, 1.8rem,$bright , 1);
+  @include f(600, 1.4rem, 1.8rem, $bright, 1);
 }
 
 @mixin f600-14-18-d {
@@ -157,6 +157,14 @@
 
 @mixin f500-13-28-d {
   @include f(500, 1.3rem, 2.8rem, $dim-dark, 0.7);
+}
+
+@mixin f500-13-28-b {
+  @include f(500, 1.3rem, 2.8rem, $bright, 1);
+}
+
+@mixin f500-13-28-bd {
+  @include f(500, 1.3rem, 2.8rem, $bright-dark, 1);
 }
 
 @mixin f500-14-18 {
