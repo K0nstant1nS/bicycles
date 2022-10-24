@@ -1,0 +1,10 @@
+.variable-track__title_theme_dark {
+  @include f700-55-60-d;
+}
+
+@media screen and (max-width: $mobile-screen-max-width) {
+  .variable-track__title_theme_dark {
+    @include f700-32-40-d;
+  }
+}
+

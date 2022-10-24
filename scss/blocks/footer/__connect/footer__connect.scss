@@ -1,0 +1,13 @@
+.footer__connect {
+  @include f600-24-32;
+  margin: 0;
+  padding: 8rem 0 5rem 0;
+  max-width: 22.9rem;
+}
+
+@media screen and (max-width: $mobile-screen-max-width){
+  .footer__connect {
+    max-width: 28.4rem;
+    padding: 6rem 0 4rem 0;
+  }
+}

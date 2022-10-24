@@ -1,0 +1,10 @@
+.variable-bicycle__list-elem {
+  @include f400-18-28;
+  text-align: right;
+  cursor: pointer;
+  transition: opacity .3;
+}
+
+.variable-bicycle__list-elem:hover {
+  opacity: .6;
+}

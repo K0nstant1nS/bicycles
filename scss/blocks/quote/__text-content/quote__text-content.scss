@@ -1,0 +1,16 @@
+.quote__text-content {
+  @include flex-column;
+  justify-content: space-between;
+  max-width: 470px;
+  width: 45%;
+}
+
+@media screen and (max-width: $mobile-screen-max-width) {
+  .quote__text-content {
+    @include flex-column;
+    justify-content: space-between;
+    max-width: none;
+    width: 100%;
+    gap: 40px;
+  }
+}

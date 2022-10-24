@@ -1,0 +1,9 @@
+.menu__list-link_theme_dark {
+  @include f500-14-18-d;
+}
+
+@media screen and (max-width: $mobile-screen-max-width) {
+  .menu__list-link_theme_dark {
+    @include f500-18-18-d;
+  }
+}

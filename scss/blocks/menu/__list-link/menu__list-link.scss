@@ -1,0 +1,15 @@
+.menu__list-link {
+  @include f500-14-18;
+  text-decoration: none;
+  transition: opacity 0.5s;
+}
+
+.menu__list-link:hover {
+  opacity: 0.75;
+}
+
+@media screen and (max-width: $mobile-screen-max-width) {
+  .menu__list-link {
+    @include f500-18-18;
+  }
+}

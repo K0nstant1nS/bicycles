@@ -1,0 +1,12 @@
+.bicycle-image-block__image-caption {
+  @include f600-18-22;
+  padding-top: 22px;
+  /*padding-left: 7.65%;*/
+}
+
+@media screen and (max-width: $mobile-screen-max-width){
+  .bicycle-image-block__image-caption {
+    @include f600-14-18;
+    padding: 0 0 16px 0;
+  }
+}

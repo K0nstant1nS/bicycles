@@ -1,0 +1,34 @@
+.document {
+  scroll-behavior: smooth;
+  font-size: 10px;
+}
+
+@media screen and (max-width: 1250px) {
+  .document {
+    font-size: 8px;
+  }
+}
+
+@media screen and (max-width: 1020px) {
+  .document {
+    font-size: 7px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .document {
+    font-size: 6px;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .document {
+    font-size: 5px;
+  }
+}
+
+@media screen and (max-width: $mobile-screen-max-width) {
+  .document {
+    font-size: 10px;
+  }
+}

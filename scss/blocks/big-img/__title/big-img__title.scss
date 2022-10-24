@@ -1,0 +1,13 @@
+.big-img__title {
+  grid-column: 2;
+  grid-row: 2;
+  @include f700-55-60;
+}
+
+@media screen and (max-width: $mobile-screen-max-width) {
+  .big-img__title {
+    @include f700-32-40;
+    grid-column: 1/-1;
+    grid-row: 1;
+  }
+}

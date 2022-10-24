@@ -1,0 +1,15 @@
+.variable-track__image {
+  min-width: 250px;
+  max-width: 650px;
+}
+
+@media screen and (max-width: $mobile-screen-max-width) {
+
+  .variable-track__image {
+    max-width: 100%;
+  }
+
+  .variable-track__image:nth-child(2){
+    display: none;
+  }
+}

@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="ru" class="document">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="bicycles" />
+    <meta name="author" content="Соловьев Константин" />
+    <meta
+      name="keywords"
+      content="Велосипеды, Трассы, Эдди меркс, Шоссе, ТТ, Грэвел"
+    />
+    <link rel="stylesheet" href="./pages/index.css" />
+    <title>Шоссе, ТТ и Грэвел</title>
+  </head>
+  <body class="page" data-theme="page_theme_dark">
+    <div class="content">
+      <header class="header" data-theme="header_theme_dark">
+        <nav class="menu">
+          <ul class="menu__list">
+            <li class="menu__list-elem">
+              <a
+                class="menu__list-link"
+                data-theme="menu__list-link_theme_dark"
+                href="#track"
+                >Покрытия и градиенты</a
+              >
+            </li>
+            <li class="menu__list-elem">
+              <a
+                class="menu__list-link"
+                data-theme="menu__list-link_theme_dark"
+                href="#bicycle"
+                >Велосипеды</a
+              >
+            </li>
+            <li class="menu__list-elem">
+              <a
+                class="menu__list-link"
+                data-theme="menu__list-link_theme_dark"
+                href="#training"
+                >Тренировки</a
+              >
+            </li>
+          </ul>
+          <button type="button" class="menu__mobile-menu">
+            <span
+              class="menu__mobile-line"
+              data-theme="menu__mobile-line_theme_dark"
+            ></span>
+            <span
+              class="menu__mobile-line"
+              data-theme="menu__mobile-line_theme_dark"
+            ></span>
+            <span
+              class="menu__mobile-line"
+              data-theme="menu__mobile-line_theme_dark"
+            ></span>
+          </button>
+          <div
+            class="menu__mobile-popup"
+            data-theme="menu__mobile-popup_theme_dark"
+          >
+            <div class="menu__mobile-popup-content">
+              <ul class="menu__list">
+                <li class="menu__list-elem">
+                  <a
+                    class="menu__list-link"
+                    data-theme="menu__list-link_theme_dark"
+                    href="#track"
+                    >Покрытия и градиенты</a
+                  >
+                </li>
+                <li class="menu__list-elem">
+                  <a
+                    class="menu__list-link"
+                    data-theme="menu__list-link_theme_dark"
+                    href="#bicycle"
+                    >Велосипеды</a
+                  >
+                </li>
+                <li class="menu__list-elem">
+                  <a
+                    class="menu__list-link"
+                    data-theme="menu__list-link_theme_dark"
+                    href="#training"
+                    >Тренировки</a
+                  >
+                </li>
+              </ul>
+              <div class="theme-changer">
+                <button
+                  type="button"
+                  class="theme-changer__button"
+                  data-totheme="light"
+                >
+                  <img
+                    class="theme-changer__sun-img"
+                    src="./images/sun.svg"
+                    alt="Солнце"
+                  />
+                </button>
+                <div class="theme-changer__theme-input-handler">
+                  <input type="checkbox" class="theme-changer__theme-input" />
+                </div>
+                <button
+                  type="button"
+                  class="theme-changer__button"
+                  data-totheme="dark"
+                >
+                  <img
+                    class="theme-changer__moon-img"
+                    src="./images/moon.svg"
+                    alt="Луна"
+                  />
+                </button>
+              </div>
+              <button type="button" class="menu__close">
+                <img alt="Крестик" src="./images/close.svg" />
+              </button>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <main class="main">
+        <section class="big-img">
+          <h1 class="big-img__title" data-theme="big-img__title_theme_dark">
+            Шоссе, ТТ и&nbsp;Грэвел
+          </h1>
+          <p
+            class="big-img__paragraph"
+            data-theme="big-img__paragraph_theme_dark"
+          >
+            Триатлонные старты, горные серпантины или грейвел заезды по
+            живописным маршрутам – нужно только определиться с выбором
+            велосипеда и отправиться в путь.
+          </p>
+          <a href="#" class="big-img__more"></a>
+          <p
+            class="big-img__bycicle-name"
+            data-theme="big-img__bycicle-name_theme_dark"
+          >
+            Cannondale Systemsix
+          </p>
+          <div class="big-img__image-content">
+            <img
+              alt="Лес и дорога"
+              class="big-img__img"
+              src="./images/big-img.png"
+            />
+            <div class="big-img__sticky-container">
+              <div class="big-img__bike">
+                <img
+                  alt="Велосипед cannondale systemsix mod"
+                  class="big-img__bike-img"
+                  src="./images/bike-fix.png"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="quote">
+          <img
+            class="quote__img"
+            src="./images/quote-img.png"
+            alt="Горы, 2 сарая и дорога"
+          />
+          <div class="quote__text-content">
+            <blockquote
+              class="quote__title"
+              data-theme="quote__title_theme_dark"
+            >
+              «Катайся много или мало, долго или коротко, как хочешь - но
+              катайся»
+            </blockquote>
+            <div class="quote__sign">
+              <span class="quote__author" data-theme="quote__author_theme_dark"
+                >Эдди Меркс</span
+              >
+              <span class="quote__about" data-theme="quote__about_theme_dark"
+                >Велогонщик</span
+              >
+            </div>
+          </div>
+        </section>
+        <section id="track" class="variable-track">
+          <h2
+            class="variable-track__title"
+            data-theme="variable-track__title_theme_dark"
+          >
+            Шоссе
+          </h2>
+          <p
+            class="variable-track__about"
+            data-theme="variable-track__about_theme_dark"
+          >
+            На шоссейном велосипеде можно ездить по асфальту на разных
+            градиентах: будь то горы или равнины. Гонки проходят в командном
+            пелотоне, но тренироваться можно и самостоятельно.
+          </p>
+          <div class="variable-track__images-set">
+            <img
+              class="variable-track__image"
+              src="./images/highway1.png"
+              alt="Горное шоссе"
+            />
+            <img
+              class="variable-track__image"
+              src="./images/gravel1.png"
+              alt="Лесная дорога и велосипедист"
+            />
+            <img
+              class="variable-track__type-image"
+              src="./images/Group15.svg"
+              alt="Зеленая иконка"
+            />
+          </div>
+          <div class="variable-track__controls">
+            <button
+              type="button"
+              class="variable-track__control"
+              data-theme="variable-track__control_theme_dark"
+              data-direction="-1"
+            >
+              <img
+                alt="Стрелка влево"
+                class="variable-track__control-img"
+                src="./images/prev.svg"
+                data-darkpath="./images/prev-d.svg"
+              />
+            </button>
+            <button
+              type="button"
+              class="variable-track__control"
+              data-theme="variable-track__control_theme_dark"
+              data-direction="1"
+            >
+              <img
+                alt="Стрелка вправо"
+                class="variable-track__control-img"
+                src="./images/next.svg"
+                data-darkpath="./images/next-d.svg"
+              />
+            </button>
+          </div>
+        </section>
+        <section id="bicycle" class="variable-bicycle">
+          <div class="variable-bicycle__header">
+            <h2
+              class="variable-bicycle__title"
+              data-theme="variable-bicycle__title_theme_dark"
+            >
+              Велосипеды
+            </h2>
+            <select class="variable-bicycle__select">
+              <option value="highway" class="variable-bicycle__option">
+                Шоссе
+              </option>
+              <option value="gravel" class="variable-bicycle__option">
+                Грэвел
+              </option>
+              <option value="tt" class="variable-bicycle__option">ТТ</option>
+            </select>
+            <ul class="variable-bicycle__nav">
+              <li
+                class="variable-bicycle__list-elem variable-bicycle__list-elem_active"
+                data-theme="variable-bicycle__list-elem_active_theme_dark"
+                data-btarget="highway"
+              >
+                Шоссе
+              </li>
+              <li
+                class="variable-bicycle__list-elem"
+                data-theme="variable-bicycle__list-elem_theme_dark"
+                data-btarget="gravel"
+              >
+                Грэвел
+              </li>
+              <li
+                class="variable-bicycle__list-elem"
+                data-theme="variable-bicycle__list-elem_theme_dark"
+                data-btarget="tt"
+              >
+                TT
+              </li>
+            </ul>
+          </div>
+          <div class="variable-bicycle__images-set">
+            <figure class="bicycle-image-block">
+              <a
+                target="_blank"
+                href="https://www.sigmasports.com/item/Cervelo/Caledonia-5-Ultegra-Disc-Road-Bike-2021/RDEN "
+                class="bicycle-image-block__image-container"
+              >
+                <img
+                  alt="Велосипед кервело"
+                  class="bicycle-image-block__image"
+                  src="./images/Cervelo.png"
+                />
+              </a>
+              <figcaption
+                class="bicycle-image-block__image-caption"
+                data-theme="bicycle-image-block__image-caption_theme_dark"
+              >
+                Cervelo Caledonia-5
+              </figcaption>
+            </figure>
+            <figure class="bicycle-image-block">
+              <a
+                target="_blank"
+                href="https://www.sigmasports.com/item/Cannondale/SystemSix-HiMOD-Ultegra-Di2-Disc-Road-Bike-2021/R82J"
+                class="bicycle-image-block__image-container"
+              >
+                <img
+                  alt="Велосипед канондейл"
+                  class="bicycle-image-block__image"
+                  src="./images/Cannondale.png"
+                />
+              </a>
+              <figcaption
+                class="bicycle-image-block__image-caption"
+                data-theme="bicycle-image-block__image-caption_theme_dark"
+              >
+                Cannondale Systemsix Himod
+              </figcaption>
+            </figure>
+            <figure class="bicycle-image-block">
+              <a
+                target="_blank"
+                href="https://www.sigmasports.com/item/Trek/Domane-SL-7-Force-eTap-AXS-Disc-Road-Bike-2021/RULF"
+                class="bicycle-image-block__image-container"
+              >
+                <img
+                  alt="Велосипед Трэк Домейн"
+                  class="bicycle-image-block__image"
+                  src="./images/TrekDomane.png"
+                />
+              </a>
+              <figcaption
+                class="bicycle-image-block__image-caption"
+                data-theme="bicycle-image-block__image-caption_theme_dark"
+              >
+                Trek Domane SL-7
+              </figcaption>
+            </figure>
+          </div>
+          <ul class="variable-bicycle__scroll-status">
+            <li>
+              <button
+                type="button"
+                class="variable-bicycle__scroll-elem_active variable-bicycle__scroll-elem"
+                data-scollnumber="0"
+              ></button>
+            </li>
+            <li>
+              <button
+                type="button"
+                class="variable-bicycle__scroll-elem"
+                data-scollnumber="1"
+              ></button>
+            </li>
+            <li>
+              <button
+                type="button"
+                class="variable-bicycle__scroll-elem"
+                data-scollnumber="2"
+              ></button>
+            </li>
+          </ul>
+        </section>
+        <section id="training" class="training">
+          <h2 class="training__title" data-theme="training__title_theme_dark">
+            Тренировки
+          </h2>
+          <p class="training__text" data-theme="training__text_theme_dark">
+            Чтобы найти маршрут для тренировки можно воспользоваться сервисом
+            Komoot, а записать эти тренировки поможет приложение Strava, а также
+            это приложение позволит построить тренировочный план.
+          </p>
+          <div class="training__links">
+            <a
+              target="_blank"
+              href="https://www.strava.com"
+              class="training__app"
+              data-theme="training__app_theme_dark"
+              >Strava</a
+            >
+            <a
+              target="_blank"
+              href="https://www.komoot.com"
+              class="training__app"
+              data-theme="training__app_theme_dark"
+              >Komoot</a
+            >
+          </div>
+          <img
+            class="training__img"
+            src="./images/Traning.png"
+            alt="Поворот дороги и деревья на обочине"
+          />
+        </section>
+      </main>
+      <footer class="footer" data-theme="footer_theme_dark">
+        <div class="footer__content">
+          <h3 class="footer__connect" data-theme="footer__connect_theme_dark">
+            Подпишитесь на рассылку —
+          </h3>
+          <form name="email-form" class="email-form" action="#">
+            <input
+              name="email-input"
+              class="email-form__email"
+              type="email"
+              placeholder="Ваш e-mail"
+              data-theme="email-form__email_theme_dark"
+              required
+            />
+            <button
+              type="submit"
+              class="email-form__submit-button"
+              data-theme="email-form__submit-button_theme_dark"
+            >
+              ok
+            </button>
+          </form>
+          <span class="footer__copyright">© Road Club 2021</span>
+        </div>
+        <div class="theme-changer">
+          <button
+            type="button"
+            class="theme-changer__button"
+            data-totheme="light"
+          >
+            <img
+              class="theme-changer__sun-img"
+              src="./images/sun.svg"
+              alt="Солнце"
+            />
+          </button>
+          <div class="theme-changer__theme-input-handler">
+            <input type="checkbox" class="theme-changer__theme-input" />
+          </div>
+          <button
+            type="button"
+            class="theme-changer__button"
+            data-totheme="dark"
+          >
+            <img
+              class="theme-changer__moon-img"
+              src="./images/moon.svg"
+              alt="Луна"
+            />
+          </button>
+        </div>
+      </footer>
+    </div>
+    <script type="module" src="./script/bicycle-data.js"></script>
+    <script type="module" src="./script/traces-data.js"></script>
+    <script type="module" src="./script/index.js"></script>
+  </body>
+</html>

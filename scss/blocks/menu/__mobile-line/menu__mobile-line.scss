@@ -1,0 +1,12 @@
+.menu__mobile-line {
+  display: none;
+}
+
+@media screen and (max-width: $mobile-screen-max-width) {
+  .menu__mobile-line {
+    display: block;
+    width: 22px;
+    height: 0;
+    border-bottom: 3px solid $dim;
+  }
+}

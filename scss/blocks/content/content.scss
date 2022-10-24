@@ -1,0 +1,7 @@
+.content {
+  @include flex-column;
+  position: relative;
+  width: 100%;
+  align-items: center;
+  max-width: 1440px;
+}

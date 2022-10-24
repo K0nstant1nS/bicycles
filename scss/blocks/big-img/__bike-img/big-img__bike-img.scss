@@ -1,0 +1,9 @@
+.big-img__bike-img {
+  width: 34rem;
+}
+
+@media screen and (max-width: $mobile-screen-max-width) {
+  .big-img__bike-img {
+    width: 77%;
+  }
+}

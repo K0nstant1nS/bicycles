@@ -1,0 +1,16 @@
+.big-img {
+  padding-top: 20px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 12rem 46rem auto minmax(40%, 61rem);
+  grid-template-rows: 6rem auto 5rem auto 5rem 50px 16.7rem auto auto;
+}
+
+@media screen and (max-width: $mobile-screen-max-width) {
+  .big-img {
+    padding-top: 40px;
+    grid-template-columns: 10.56% 89.44%;
+    grid-template-rows: auto auto auto auto;
+    row-gap: 40px;
+  }
+}

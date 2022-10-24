@@ -1,0 +1,10 @@
+.variable-bicycle__title {
+  @include f700-55-60;
+}
+
+@media screen and (max-width: $mobile-screen-max-width){
+  .variable-bicycle__title {
+    padding-top: 40px;
+    @include f700-32-40;
+  }
+}

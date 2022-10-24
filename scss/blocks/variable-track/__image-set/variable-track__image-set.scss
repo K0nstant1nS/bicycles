@@ -1,0 +1,17 @@
+.variable-track__images-set {
+  position: relative;
+  @include flex-row;
+  padding-top: 8rem;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: $mobile-screen-max-width) {
+  .variable-track__images-set {
+    grid-column: 1/-1;
+    grid-row: 2;
+    padding: 0;
+    max-width: 100%;
+    justify-content: flex-start;
+  }
+}

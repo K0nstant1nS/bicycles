@@ -1,0 +1,9 @@
+.quote__about_theme_dark {
+  @include f400-16-28-d;
+}
+
+@media screen and (max-width: $mobile-screen-max-width) {
+  .quote__about_theme_dark {
+    @include f400-10-16-d;
+  }
+}

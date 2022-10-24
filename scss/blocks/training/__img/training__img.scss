@@ -1,0 +1,13 @@
+.training__img {
+  grid-column: 4;
+  grid-row: 1/-1;
+  width: 100%;
+}
+
+@media screen and (max-width: $mobile-screen-max-width){
+  .training__img {
+    grid-column: 1/-1;
+    grid-row: 2;
+    width: 100%;
+  }
+}

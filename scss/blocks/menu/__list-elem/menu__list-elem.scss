@@ -1,0 +1,4 @@
+.menu__list-elem {
+  @include flex-row;
+  justify-content: center;
+}

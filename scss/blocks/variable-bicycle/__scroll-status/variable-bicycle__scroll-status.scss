@@ -1,0 +1,14 @@
+.variable-bicycle__scroll-status{
+    display: none;
+    gap: 5px;
+    margin: 0;
+    padding: 0;
+    align-self: center;
+    list-style: none;
+}
+
+@media screen and (max-width: $mobile-screen-max-width){
+    .variable-bicycle__scroll-status{
+        @include flex-row;
+    }
+  }

@@ -1,0 +1,8 @@
+.theme-changer {
+  @include flex-row;
+  gap: 22px;
+}
+
+.menu__mobile-popup-content .theme-changer {
+  padding-bottom: 38px;
+}

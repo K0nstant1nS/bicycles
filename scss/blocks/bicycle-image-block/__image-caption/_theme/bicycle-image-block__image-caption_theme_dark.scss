@@ -1,0 +1,9 @@
+.bicycle-image-block__image-caption_theme_dark {
+  @include f600-18-22-d;
+}
+
+@media screen and (max-width: $mobile-screen-max-width){
+  .bicycle-image-block__image-caption_theme_dark {
+    @include f600-14-18;
+  }
+}

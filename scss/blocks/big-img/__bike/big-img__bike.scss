@@ -1,0 +1,20 @@
+.big-img__bike {
+  position: -webkit-sticky;
+  position: sticky;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 200px;
+  height: 30rem;
+  width: 44rem;
+  background: #f4f4f4;
+  box-shadow: -20px 60px 220px rgba(0, 0, 0, 0.44);
+  border-radius: 20px;
+}
+
+@media screen and (max-width: $mobile-screen-max-width) {
+  .big-img__bike {
+    height: auto;
+    width: 92.126%;
+  }
+}

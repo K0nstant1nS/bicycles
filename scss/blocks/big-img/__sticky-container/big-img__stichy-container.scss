@@ -1,0 +1,17 @@
+.big-img__sticky-container {
+  position: absolute;
+  height: 43rem;
+  width: 100%;
+  left: -20rem;
+  top: 32rem;
+}
+
+@media screen and (max-width: $mobile-screen-max-width) {
+  .big-img__sticky-container {
+    position: absolute;
+    height: 60%;
+    width: 100%;
+    left: -30px;
+    top: 30%;
+  }
+}
